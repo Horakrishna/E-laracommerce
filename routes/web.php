@@ -23,6 +23,7 @@ Route::get('', [
 	'uses'  => 'HomeController@index',
 	'as'    =>'/'
  ]);
+
 Route::get('/product', [
 	'uses' =>'HomeController@product',
 	'as'   =>'/product'
@@ -48,5 +49,8 @@ Route::get('/login',[
 /*E-commerce Front-end mastering End*/
 
 /*E-commerce Back-end mastering Start*/
-
+Route::get('/backend',[
+	'uses' =>'AdminController@dashboard',
+	'as'   =>'/backend'
+]);
 /*E-commerce Back-end mastering End*/
